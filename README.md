@@ -6,9 +6,9 @@
 ## Dataset Description
 
 - **Dataset**: Creditcard_data.csv  
-- **Target Variable**: `Class`  
-  - `0` → Normal transaction  
-  - `1` → Fraudulent transaction  
+- **Target Variable**: **Class**
+  - **0** → Normal transaction  
+  - **1** → Fraudulent transaction  
 
 The dataset is highly imbalanced, which makes it suitable for evaluating different sampling strategies.
 
@@ -31,10 +31,10 @@ The objectives of this assignment are:
 The overall methodology followed in this project is outlined below:
 
 1. **Data Loading**  
-   The credit card dataset is loaded and the target variable (`Class`) is separated from the feature set.
+   The credit card dataset is loaded and the target variable **Class** is separated from the feature set.
 
 2. **Feature Scaling**  
-   All features are standardized using `StandardScaler` to ensure fair distance-based computations and model training.
+   All features are standardized using **StandardScaler** to ensure fair distance-based computations and model training.
 
 3. **Sampling Techniques**  
    Five different sampling techniques are applied independently to handle the class imbalance:
@@ -81,7 +81,7 @@ The overall methodology followed in this project is outlined below:
 
 ## Implementation Details
 
-- Feature scaling is performed using `StandardScaler`
+- Feature scaling is performed using **StandardScaler**
 - Train–test splitting is done using stratification
 - Accuracy is used as the evaluation metric
 - The complete workflow is contained in a single notebook
@@ -90,14 +90,16 @@ The overall methodology followed in this project is outlined below:
 
 ## Results
 
-## ⚙️ Technologies Used
-
 - A final accuracy table compares all sampling techniques across models
 - The best sampling technique for each model is identified from the results
+
+---
 
 ## Conclusion
 
 This project demonstrates that sampling techniques play a crucial role in handling imbalanced datasets and significantly influence model performance. The results highlight that no single sampling method is universally optimal for all machine learning models.
+
+---
 
 ## Author
 
