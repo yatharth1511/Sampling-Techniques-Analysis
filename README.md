@@ -54,11 +54,6 @@ The dataset is highly imbalanced, which makes it suitable for studying sampling 
 
 ---
 
-## 🏗 Project Architecture
-
-
----
-
 ## ⚙️ Technologies Used
 
 - Python  
@@ -94,5 +89,5 @@ streamlit run app.py
 
 ## Author
 
-Yatharth Sharma, Roll No- 102303136
+### Yatharth Sharma, Roll No- 102303136
 
