@@ -1,0 +1,13 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Streamlit exports
+frontend/exports/
+
+# OS files
+.DS_Store
+Thumbs.db
