@@ -1,7 +1,12 @@
 # Sampling Techniques on Imbalanced Credit Card Dataset
 
-## Assignment: Sampling Techniques and Model Evaluation
+## Problem Statement
 
+This project focuses on understanding how sampling techniques help handle class imbalance in machine learning problems. The dataset used represents credit card transactions, where fraudulent cases are extremely rare compared to normal transactions.
+
+Since most machine learning models assume balanced data, training directly on such datasets leads to biased predictions. To overcome this, different sampling techniques were applied and their impact on various machine learning models was analyzed.
+
+---
 
 ## Dataset Description
 
