@@ -1,48 +1,73 @@
-# Sampling Techniques vs Machine Learning Models
+# Sampling Techniques on Imbalanced Credit Card Dataset
 
-## 📌 Assignment: Sampling Techniques on Imbalanced Data
+## Assignment: Sampling Techniques and Model Evaluation
 
-This project studies the impact of different sampling techniques on the performance of multiple machine learning models using an imbalanced credit card fraud dataset.
 
-The goal is to balance the dataset, generate multiple samples using different sampling strategies, train various ML models, and analyze how sampling affects model accuracy.
+## Dataset Description
 
----
+- **Dataset**: Creditcard_data.csv  
+- **Target Variable**: `Class`  
+  - `0` → Normal transaction  
+  - `1` → Fraudulent transaction  
 
-## 📂 Dataset
-
-- Dataset: Creditcard_data.csv  
-- Target variable: `Class`
-  - `0` → Normal Transaction  
-  - `1` → Fraudulent Transaction  
-
-The dataset is highly imbalanced, which makes it suitable for studying sampling techniques.
+The dataset is highly imbalanced, which makes it suitable for evaluating different sampling strategies.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
-1. Balance the imbalanced dataset  
-2. Create five different samples  
-3. Apply five different sampling techniques  
-4. Train five different machine learning models  
-5. Compare accuracy across all combinations  
-6. Identify the best sampling–model pair  
+The objectives of this assignment are:
+
+1. To handle class imbalance using different sampling techniques  
+2. To generate five sampled datasets  
+3. To apply five different machine learning models  
+4. To compare model performance using accuracy  
+5. To identify the most effective sampling technique for each model  
 
 ---
 
-## 🔁 Sampling Techniques Used
+## Methodology
+
+The overall methodology followed in this project is outlined below:
+
+1. **Data Loading**  
+   The credit card dataset is loaded and the target variable (`Class`) is separated from the feature set.
+
+2. **Feature Scaling**  
+   All features are standardized using `StandardScaler` to ensure fair distance-based computations and model training.
+
+3. **Sampling Techniques**  
+   Five different sampling techniques are applied independently to handle the class imbalance:
+   - Random Sampling
+   - Cluster Sampling
+   - Bootstrap Sampling
+   - Stratified Sampling
+   - Strategic (distance-based) Sampling
+
+4. **Model Training**  
+   For each sampled dataset, five machine learning models are trained using a stratified train–test split.
+
+5. **Evaluation**  
+   Model performance is evaluated using **accuracy**, and results are compared across all sampling–model combinations.
+
+6. **Analysis**  
+   The best sampling technique for each model is identified based on accuracy scores.
+
+---
+
+## Sampling Techniques Used
 
 | Sampling ID | Technique | Description |
 |------------|----------|-------------|
 | Sampling1 | Random Sampling | Random subset selection |
-| Sampling2 | Cluster Sampling | Sampling based on KMeans clusters |
+| Sampling2 | Cluster Sampling | Sampling based on KMeans clustering |
 | Sampling3 | Bootstrap Sampling | Sampling with replacement |
-| Sampling4 | Stratified Sampling | Preserves class distribution |
+| Sampling4 | Stratified Sampling | Maintains class distribution |
 | Sampling5 | Strategic Sampling | Distance-based informative sampling |
 
 ---
 
-## 🤖 Machine Learning Models Used
+## Machine Learning Models Used
 
 | Model ID | Algorithm |
 |--------|----------|
@@ -54,45 +79,27 @@ The dataset is highly imbalanced, which makes it suitable for studying sampling 
 
 ---
 
-## 🏗 Project Architecture
+## Implementation Details
 
-
----
-
-## ⚙️ Technologies Used
-
-- Python  
-- FastAPI (Backend API)  
-- Streamlit (Frontend UI)  
-- Scikit-learn  
-- Pandas & NumPy  
-- Matplotlib  
+- Feature scaling is performed using `StandardScaler`
+- Train–test splitting is done using stratification
+- Accuracy is used as the evaluation metric
+- The complete workflow is contained in a single notebook
 
 ---
 
-## ▶ Running the Project
+## Results
 
-### Step 1: Install dependencies
-```bash
-pip install -r requirements.txt
+- A final accuracy table compares all sampling techniques across models
+- The best sampling technique for each model is identified from the results
 
-```
+## Conclusion
 
-### Step 2: Start backend (integrated with FastAPI)
-```bash
-cd backend
-uvicorn main:app --reload
-
-```
-
-### Step 3: Start frontend (Streamlit)
-```bash
-cd frontend
-streamlit run app.py
-
-```
+This project demonstrates that sampling techniques play a crucial role in handling imbalanced datasets and significantly influence model performance. The results highlight that no single sampling method is universally optimal for all machine learning models.
 
 ## Author
 
-Yatharth Sharma, Roll No- 102303136
+### Name: Yatharth Sharma, Roll No: 102303136
+
+
 

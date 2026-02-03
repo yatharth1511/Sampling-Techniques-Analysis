@@ -1,8 +1,0 @@
-fastapi
-uvicorn
-pandas
-scikit-learn
-imbalanced-learn
-streamlit
-requests
-matplotlib
