@@ -90,6 +90,8 @@ The overall methodology followed in this project is outlined below:
 
 ## Results
 
+## ⚙️ Technologies Used
+
 - A final accuracy table compares all sampling techniques across models
 - The best sampling technique for each model is identified from the results
 
